@@ -24,11 +24,7 @@ def run_ocr(input_path, output_path):
         return False
 
 def run_verapdf(file_path):
-    try:
-        result = subprocess.run(["verapdf", "--format", "text", file_path], capture_output=True, text=True)
-        return result.stdout
-    except Exception:
-        return "veraPDF not available."
+    return "veraPDF validation is not enabled in this hosted version."
 
 if uploaded_files:
     for file in uploaded_files:
