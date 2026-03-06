@@ -1,15 +1,18 @@
 
-# IU PDF Accessibility Fixer (Starter)
+# IU PDF Accessibility Helper
 
-Prototype tool for **automatic PDF accessibility remediation**.
+A free Streamlit-based first-pass PDF accessibility helper.
 
-Features:
-- Multi‑file upload
-- OCR for scanned PDFs
-- Machine validation via veraPDF
-- Download remediated PDFs
+## Features
+- Multiple PDF uploads
+- OCR attempt using OCRmyPDF
+- Detect pages likely containing images
+- Processing summary CSV
+- Page-by-page report CSV
+- Alt-text worksheet CSV
 
-Run locally:
-
-pip install -r requirements.txt
-streamlit run app/app.py
+## Deploy
+Deploy on Streamlit Community Cloud with:
+- `requirements.txt`
+- `packages.txt`
+- main file path: `app/app.py`
